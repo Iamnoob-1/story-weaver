@@ -18,7 +18,7 @@ def generate_story():
     if not prompt:
         return jsonify({"error": "Prompt is required"}), 400
 
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
+    url = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent"
     headers = {"Content-Type": "application/json"}
     params = {"key": GEMINI_API_KEY}
     body = {
